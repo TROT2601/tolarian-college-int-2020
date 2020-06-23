@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+  mail:
+    host: smtp.mailtrap.io
+    port: 465
+    username: fdc84728455965
+    password: 913ddba0c774b7
+    properties:
+      mail.transport.protocol: smtp
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+      mail.debug: false
+
+app:
+  notification:
+    email:
+      to: tolarian.college@hotmail.com
+      subject: El préstamo se ha realizado con exito
+      text: Disfrute su lectura!
